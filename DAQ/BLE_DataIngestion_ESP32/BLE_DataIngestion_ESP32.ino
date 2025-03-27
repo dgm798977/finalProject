@@ -13,7 +13,7 @@ const char* password = "testing1";
 
 const char* edgeImpulseURL = "ingestion.edgeimpulse.com";
 const int edgeImpulsePort = 443;
-const char* apiKey = apiKey;  // Replace with your API key
+const char* apiKey = valueKey;  // Replace with your API key
 
 WiFiClientSecure client;
 /*
