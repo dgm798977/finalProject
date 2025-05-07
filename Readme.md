@@ -31,7 +31,7 @@ Training will also be done by implementing the procedures Edge Impulse platform 
 
 # Final implementation
 
-The result of a correct training will be tested with the same procedure. To keep the experiment simple, different strokes will have to be identified by the board and results of identification will be represented by using different colors of the RGB LED the board has.
+The result of a correct training will be tested with the same procedure. To keep the experiment simple, different strokes will have to be identified by the board and results of identification will be published via BLE so you can read it using any BLE app as nRF Connect by Nordic
 
 
 ![Architecture Diagram](https://i.ibb.co/JR2d2mvY/image.png "Configuration on racket to obtain movements")
