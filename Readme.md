@@ -8,7 +8,7 @@ Project will be divided into data acquisition, modelling/training and final impl
 
 ## Data acquisition
 
-Data for model training will be obtained using the same Arduino Nano BLE 33. We will need to attach the Arduino BLE into our rackets in a way that could detect both the impact of the ball and movements of the racket while doing different strokes.
+Data for model training will be obtained using the same Arduino Nano BLE 33. We will need to attach the Arduino BLE into our racket in a way that could detect both the impact of the ball and movements of the racket while doing different strokes.
 
 Data collected will need to be previously pre-classified and sent to Edge Impulse as a way to properly train the data.
 
@@ -16,7 +16,7 @@ Data collected will need to be previously pre-classified and sent to Edge Impuls
 
 ### Population sample
 
-Data acquisition has been done with the colaboration of 3 different persons, having used a *Frontón* as a way of receiving balls in a more controlled way.
+Data acquisition has been done by repeating movements in the air for each stroke we want to detect (due to the lack of time).
 
 ### Electronic functioning
 
@@ -31,4 +31,7 @@ Training will also be done by implementing the procedures Edge Impulse platform 
 
 # Final implementation
 
-The result of a correct training will be tested again on a *Frontón*. To keep the experiment simple, different strokes will have to be identified by the board and results of identification will be represented by using different colors of the RGB LED the board has.
+The result of a correct training will be tested with the same procedure. To keep the experiment simple, different strokes will have to be identified by the board and results of identification will be represented by using different colors of the RGB LED the board has.
+
+
+![Architecture Diagram](https://i.ibb.co/JR2d2mvY/image.png "Configuration on racket to obtain movements")
