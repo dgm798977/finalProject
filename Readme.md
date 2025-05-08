@@ -20,7 +20,7 @@ Data acquisition has been done by repeating movements in the air for each stroke
 
 ### Electronic functioning
 
-As indicated before, Arduino Nano 33 BLE will be the board used as the sensing device of the different strokes done. In order to not have the board connected to a computer which would be used as the *data uploader* to the **Edge Impulse** environment, data will be sent to an ESP32 dev Board using the BLE capability of both devices, being the ESP32 the one to connect to the **API Ingestion** of Edge Impulse. Using  the API Ingestion procedure makes it easy to upload bunch of data directly to the platform.
+As indicated before, Arduino Nano 33 BLE will be the board used as the sensing device of the different strokes done. data captured will be from accelerometer (3-axis). In order to not have the board connected to a computer which would be used as the *data uploader* to the **Edge Impulse** environment, data will be sent to an ESP32 dev Board using the BLE capability of both devices, being the ESP32 the one to connect to the **API Ingestion** of Edge Impulse. Using  the API Ingestion procedure makes it easy to upload bunch of data directly to the platform.
 This way, we will have the data ready to be processed on the project on following steps.
 
 ## Modelling & Training
