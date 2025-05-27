@@ -7,8 +7,8 @@
 
 
 
-const char* ssid = "DIGIFIBRA-hvN3";            // Replace with your Wi-Fi SSID
-const char* password = "LhCfhPxVe4dA";    // Replace with your Wi-Fi password
+const char* ssid = "wifiSSID";            // Replace with your Wi-Fi SSID
+const char* password = "passsword";    // Replace with your Wi-Fi password
 
 const char* edgeImpulseURL = "ingestion.edgeimpulse.com";
 const int edgeImpulsePort = 443;

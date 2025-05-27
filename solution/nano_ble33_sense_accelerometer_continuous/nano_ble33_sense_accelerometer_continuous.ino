@@ -1,3 +1,5 @@
+#include <uploading_test_inferencing.h>
+
 /* Edge Impulse ingestion SDK
  * Copyright (c) 2022 EdgeImpulse Inc.
  *
@@ -48,7 +50,7 @@
 
 /* Private variables ------------------------------------------------------- */
 static bool debug_nn = false;  // Set this to true to see e.g. features generated from the raw signal
-static uint32_t run_inference_every_ms = 200;
+static uint32_t run_inference_every_ms = 100;
 static rtos::Thread inference_thread(osPriorityLow);
 static float buffer[EI_CLASSIFIER_DSP_INPUT_FRAME_SIZE] = { 0 };
 static float inference_buffer[EI_CLASSIFIER_DSP_INPUT_FRAME_SIZE];
@@ -141,7 +143,11 @@ void run_inference_background() {
       ei_printf("ERR: Failed to run classifier (%d)\n", err);
       return;
     }
-
+    for (int i = 0; i < 90; i++) {
+      Serial.print(inference_buffer[i]);
+      Serial.print(", ");
+    }
+    Serial.println("");
     // print the predictions
     ei_printf("Predictions ");
     ei_printf("(DSP: %d ms., Classification: %d ms., Anomaly: %d ms.)",
